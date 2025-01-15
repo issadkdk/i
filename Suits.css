@@ -1,0 +1,164 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+
+
+*{
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-style: italic;
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(white,rgb(0, 0, 0));
+    height: 2200px;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    
+}
+.header1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+   align-items: center;
+   
+
+}
+
+
+.Realstore{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    text-align: center;
+    color: white;
+
+}
+.logo1{
+    margin-left: 30px;
+}
+.search1{
+    width: 500px;
+    height: 30px;
+
+}
+.search{
+    display: flex;
+    flex-direction: row;
+}
+.usl{
+    margin-right: 50px;
+   
+}
+.usl1{
+    margin-right: 10px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-top: 30px;
+}
+
+ul a{border-bottom: 2px solid transparent;
+
+}
+ul a:hover{
+    border-bottom-color: black;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+.imgp{
+    width: 100%;
+    height: 700px;
+    border-radius: 5%;
+    margin-top: 30px;
+}
+.first{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.first1{
+    height: 600px;
+    width: 500px;
+    border-radius: 5%;
+    background-image: linear-gradient(rgb(0, 0, 0) ,white,rgb(0, 0, 0));
+    display: flex;
+    flex-direction: column;
+
+}
+.first2{
+    height: 600px;
+    width: 500px;
+    border-radius: 5%;
+    background-image: linear-gradient(rgb(0, 0, 0) ,white,rgb(0, 0, 0));
+    display: flex;
+    flex-direction: column;
+
+
+}
+.imgf1{
+    border-radius: 5%;
+}
+.imf2{
+    border-radius: 5%;
+}
+.p{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.p1{
+    margin-left: 20px;
+
+}
+.p2{
+    margin-right: 20px;
+    color: rgb(80, 80, 80);
+}
+.p3{
+    font-size: 20px;
+    color: aliceblue;
+    margin-top: 20px;
+    margin-left: 25px;
+
+}
+.p4{
+    color: aliceblue;
+    margin-top: 20px;
+    
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.p41{
+    height: 25px;
+    width: 25px;
+}
+.p41:hover{
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    
+
+}
+
+
+
+
+
