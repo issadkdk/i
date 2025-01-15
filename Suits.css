@@ -13,7 +13,7 @@ body{
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(white,rgb(0, 0, 0));
-    height: 2200px;
+    height: 5500px;
 }
 .header{
     display: flex;
@@ -23,7 +23,7 @@ body{
 .header1{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    
     margin-top: 30px;
    align-items: center;
    
@@ -45,6 +45,7 @@ body{
 .search1{
     width: 500px;
     height: 30px;
+    margin-left: 150px;
 
 }
 .search{
@@ -90,19 +91,19 @@ a{
 
 }
 .first1{
-    height: 600px;
+    height: 650px;
     width: 500px;
     border-radius: 5%;
-    background-image: linear-gradient(rgb(0, 0, 0) ,white,rgb(0, 0, 0));
+    background-image: linear-gradient(white ,rgb(0, 0, 0));
     display: flex;
     flex-direction: column;
 
 }
 .first2{
-    height: 600px;
+    height: 650px;
     width: 500px;
     border-radius: 5%;
-    background-image: linear-gradient(rgb(0, 0, 0) ,white,rgb(0, 0, 0));
+    background-image: linear-gradient(white ,rgb(0, 0, 0));
     display: flex;
     flex-direction: column;
 
@@ -127,7 +128,7 @@ a{
 }
 .p2{
     margin-right: 20px;
-    color: rgb(80, 80, 80);
+    color: rgb(55, 55, 55);
 }
 .p3{
     font-size: 20px;
@@ -140,22 +141,168 @@ a{
     color: aliceblue;
     margin-top: 20px;
     
-    width: 60%;
+    width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 
 }
 .p41{
-    height: 25px;
     width: 25px;
+    height: 25px;
+
 }
+
+
 .p41:hover{
     background-color: black;
     border-radius: 50%;
     cursor: pointer;
+   
+    text-align: center;
+}
+.p42{
+    width: 25px;
+    height: 25px;
+}
+.p42:hover{
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+  
+    text-align: center;
+
+
+
+}
+.p43{
+    width: 25px;
+    height: 25px;
+}
+.p43:hover{
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+   
+    text-align: center;
+
+}
+.p44{
+    width: 25px;
+    height: 25px;
+}
+.p44:hover{
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+   
+    text-align: center;
+
+}
+.p45{
+    width: 25px;
+    height: 25px;
+}
+.p45:hover{
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+   
+    text-align: center;
+
+}
+
+
+.button11{
+    background-color: aliceblue;
+    color: black;
+    margin-top: 10px;
+    width: 70%;
+    border-radius: 5px;
+    margin-left: 70px;
+    text-align: center;
+    height: 30px;
+
+}
+.button11:hover{
+    background-color: rgba(240, 248, 255, 0.872);
+    cursor: pointer;
+    border-radius: 10px;
+}
+.special{
+    color: aliceblue;
+    margin-left: 80px;
+    margin-top: 10px;
+
+}
+.container3{
+    margin-top: 100px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.bold{
+    width: 60%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.payment{
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+.shopb{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+ 
+    
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+.Help{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
     
 
+}
+.paymentcards{
+    display: flex;
+    margin-top: 5px;
+}
+.copyr{
+    color: white;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+.social{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.payment a{
+    color: white;
+}
+.help a{
+    color: white;
 }
 
 

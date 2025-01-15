@@ -32,7 +32,7 @@ body{
 }
 .container{
     
-    background-image:linear-gradient(rgba(255, 255, 255, 0.377),rgba(0, 0, 0, 0.477)),
+    background-image:linear-gradient(rgba(255, 255, 255, 0),rgba(0, 0, 0, 0.098)),
     url(Downloads/re-photo.jpg);
     background-position: center;
     width: 100%;
@@ -53,6 +53,7 @@ ul{
     list-style: none;
     display: flex;
     justify-content: space-evenly;
+    font-size: 20px;
 
 }
 ul a{border-bottom: 2px solid transparent;
@@ -65,11 +66,13 @@ ul a:hover{
     width: 30%;
     margin-top: 25px;
     padding-left: 30px;
+    color: rgb(175, 175, 175);
     
 }
 .content p{
     width: 50%;
     font-size: 20px;
+    border: 5px;
 }
 .content h1{
     font-size: 40px;
@@ -164,6 +167,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    
 }
 .shopb{
     display: flex;
