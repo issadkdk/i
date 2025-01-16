@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+
+*{
+    font-family: "Ubuntu", serif;
+    font-weight: 400;
+    font-style: italic;
+   
+    padding: 0%;
+    margin: 0%;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url(Downloads/961125.jpg) no-repeat center center/cover;
+}
+.container form{
+    width: 670px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 20px 20px 50px rgb(0, 0, 0,0.5);
+    border-radius: 15px;
+    background: rgb(225, 225, 225,0.1);
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+}
+.container form h1{
+    color: aliceblue;
+    font-weight: 500;
+    margin-top:20px;
+    width: 500px;
+    text-align: center;
+
+}
+.container form input{
+    width: 290px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid white;
+}
+.container form input::placeholder{
+    color: white;
+}
+.container form #lastname,
+.container form #mobile{
+    margin-left: 20px;
+
+}
+.container form h4{
+    color:white;
+    font-weight: 300;
+    width: 600px;
+    margin-top: 20px;
+
+}
+.container form textarea{
+    border: none;
+    font-size: 15px;
+    background: none;
+    border-bottom: 2px solid white;
+    color:white;
+    font-weight: 200;
+    padding: 10px;
+    outline: none;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 80px;
+    max-height: 80px;
+    
+}
+textarea::-webkit-scrollbar{
+    width: 1em;
+
+}
+textarea::-webkit-scrollbar-thumb{
+    background-color: rgb(109, 109, 109);
+}
+.container form #button{
+    width: 100px;
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 20px;
+    background: white;
+    border-radius: 5px;
+    margin-right: 500px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+    color: rgb(135, 144, 152);
+    padding: 0;
+    margin-left: 100px;
+}
+.container form #button:hover{
+    opacity: 0.7;
+    cursor: pointer;
+
+}
