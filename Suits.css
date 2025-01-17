@@ -12,7 +12,7 @@
 body{
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(white,rgb(0, 0, 0));
+    background-image: linear-gradient(rgb(170, 170, 170),rgb(0, 0, 0));
     height: 5500px;
 }
 .header{
@@ -26,6 +26,7 @@ body{
     
     margin-top: 30px;
    align-items: center;
+   justify-content: space-between;
    
 
 }
@@ -37,7 +38,9 @@ body{
     background-color: black;
     text-align: center;
     color: white;
-
+}
+.Realstore p{
+    margin-top: 10px;
 }
 .logo1{
     margin-left: 30px;
@@ -45,12 +48,14 @@ body{
 .search1{
     width: 500px;
     height: 30px;
-    margin-left: 150px;
+    
+    border-radius: 10px;
 
 }
 .search{
     display: flex;
     flex-direction: row;
+    margin-right: 200px;
 }
 .usl{
     margin-right: 50px;

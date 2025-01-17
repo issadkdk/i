@@ -11,6 +11,7 @@
 .container{
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background:url(Downloads/961125.jpg) no-repeat center center/cover;
@@ -82,7 +83,7 @@ textarea::-webkit-scrollbar{
 textarea::-webkit-scrollbar-thumb{
     background-color: rgb(109, 109, 109);
 }
-.container form #button{
+.container form #Button{
     width: 100px;
     border: none;
     font-weight: 600;
@@ -97,8 +98,27 @@ textarea::-webkit-scrollbar-thumb{
     padding: 0;
     margin-left: 100px;
 }
-.container form #button:hover{
+.container form #Button:hover{
     opacity: 0.7;
     cursor: pointer;
-
+}
+button{
+    width: 100px;
+    height: 35px;
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 20px;
+    background: white;
+    border-radius: 5px;
+    margin-right: 500px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+    color: rgb(135, 144, 152);
+    padding: 0;
+    margin-left: 100px;
+}
+button:hover{
+    opacity: 0.7;
+    cursor: pointer;
 }
