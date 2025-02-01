@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <style>
+        .cart-item {
+            border-bottom: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .cart-item img {
+            width: 100px;
+            height: auto;
+        }
+        #accounting {
+            display: none; 
+            padding: 10px 20px;
+            background-color: #030303;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 10%;
+            margin-left: 420px;
+        }
+        #accounting:hover{
+            background-color: gray;
+            cursor: pointer;
+        }
+        #totalPrice{
+            font-size: 30px;
+            margin-left: 400px;
+        }
+        h2{
+            text-align: center;
+        }
+        div{
+            background-color: gray;
+            border-radius: 5%;
+            margin-top: 10px;
+            width: 70%;
+            
+            margin-left: 200px;
+
+        }
+     
+       
+
+    </style>
+</head>
+<body>
+    <h2>Your Cart</h2>
+    <div id="cartItems"></div>
+    <p id="totalPrice">Total Cart Price: $0</p>
+
+    
+    <a href="Acounting.html">
+        <button id="accounting">BUY NOW</button>
+    </a>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            let cartContainer = document.getElementById("cartItems");
+            let totalPriceElement = document.getElementById("totalPrice");
+            let buyNowButton = document.getElementById("accounting"); // Get the button
+            let totalCartPrice = 0;
+
+            cartContainer.innerHTML = "";
+
+            if (cart.length === 0) {
+                cartContainer.innerHTML = "<p>Your cart is empty.</p>";
+            } else {
+                cart.forEach((item, index) => {
+                    totalCartPrice += item.total;
+
+                    let cartItemElement = document.createElement("div");
+                    cartItemElement.classList.add("cart-item");
+
+                    cartItemElement.innerHTML = `
+                        <p><strong>Product:</strong> ${item.name}</p>
+                        <p><strong>Price:</strong> $${item.price}</p>
+                        <p><strong>Quantity:</strong> ${item.quantity}</p>
+                        <p><strong>Total:</strong> $${item.total}</p>
+                        <button class="remove-item" data-index="${index}">Remove</button>
+                        <hr>
+                    `;
+
+                    cartContainer.appendChild(cartItemElement);
+                });
+
+                totalPriceElement.textContent = `Total Cart Price: $${totalCartPrice.toFixed(2)}`;
+            }
+
+            // Hide "BUY NOW" button if the total price is 0
+            if (totalCartPrice > 0) {
+                buyNowButton.style.display = "block"; // Show button
+            } else {
+                buyNowButton.style.display = "none"; // Hide button
+            }
+
+            // Attach event listeners to remove buttons
+            document.querySelectorAll(".remove-item").forEach(button => {
+                button.addEventListener("click", (event) => {
+                    let index = event.target.getAttribute("data-index");
+                    removeCartItem(index);
+                });
+            });
+        });
+
+        // Remove item function
+        function removeCartItem(index) {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+            if (cart.length > 0) {
+                cart.splice(index, 1); // Remove the item
+                localStorage.setItem("cart", JSON.stringify(cart)); // Save updated cart
+
+                // Update cart quantity in SVG
+                let newCartCount = cart.reduce((sum, item) => sum + item.quantity, 0);
+                localStorage.setItem("cartCount", newCartCount);
+
+                location.reload(); // Refresh the page to update the cart
+            }
+        }
+    </script>
+</body>
+</html>

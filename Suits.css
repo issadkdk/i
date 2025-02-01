@@ -8,12 +8,15 @@
     font-style: italic;
     padding: 0%;
     margin: 0%;
+    
+
 }
 body{
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(rgb(170, 170, 170),rgb(0, 0, 0));
     height: 5500px;
+    
 }
 .header{
     display: flex;
@@ -50,13 +53,52 @@ body{
     height: 30px;
     
     border-radius: 10px;
+    margin-right: 200px;
 
 }
+.svg{
+    width: 50px;
+    height: 50px;
+}
+.cart{
+position: relative;
+}
+.cartContainer{
+font-family: sans-serif;
+margin-top: 20px;
+font-weight: bolder;
+font-size: xx-large;
+display: flex;
+justify-content: space-between;
+margin-right: 50px;
+}
+.cart span{
+display: flex;
+justify-content: center;
+align-items: center;
+width:20px;
+height: 20px;
+background-color: rgb(0, 0, 0);
+color: white;
+border-radius: 50%;
+position:absolute ;
+font-size: medium;
+top: 50%;
+left:30px;
+}
+.search1{
+    display: flex;
+    flex-direction: row;
+}
+
 .search{
     display: flex;
     flex-direction: row;
-    margin-right: 200px;
+    margin-left: 50px;
 }
+
+
+
 .usl{
     margin-right: 50px;
    
@@ -87,6 +129,17 @@ a{
     height: 700px;
     border-radius: 5%;
     margin-top: 30px;
+}
+select{
+    width: 50px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.pselect{
+    display: flex;
+    flex-direction: row;
+
 }
 .first{
     margin-top: 30px;
