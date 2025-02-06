@@ -85,6 +85,8 @@ form .btn{
 form .btn:hover{
     background: white;
     color: black;
+    transition: 1s;
+    box-shadow: 0 0 50px black;
 }
 form .shh{
     display: flex;
@@ -120,4 +122,6 @@ form .hoo:hover{
 .hoo:hover{
     background: white;
     color: black;
+    transition: 1s;
+    box-shadow: 0 0 50px black;
 }

@@ -69,6 +69,7 @@ ul a{border-bottom: 2px solid transparent;
 }
 ul a:hover{
     border-bottom-color: white;
+    transition: 1s;
 }
 .content{
     width: 30%;
@@ -163,6 +164,10 @@ main{
 .btn:hover{
    background-color: rgb(102, 102, 102);
     cursor: pointer;
+    box-shadow: 0 0 12px white;
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+    transition: 1s;
+    
 }
 .container3{
     margin-top: 100px;
@@ -225,7 +230,36 @@ main{
     display: flex;
     justify-content: space-evenly;
 }
-
+.social1:hover,:focus{
+    cursor: pointer;
+    box-shadow: 0 0 50px white;
+    border-radius: 10px;
+    transition: 1s;
+}
+.social2:hover,:focus{
+    cursor: pointer;
+    box-shadow: 0 0 50px white;
+    border-radius: 10px;
+    transition: 1s;
+}
+.social3:hover,:focus{
+    cursor: pointer;
+    box-shadow: 0 0 50px white;
+    border-radius: 50px;
+    transition: 1s;
+}
+.social4:hover,:focus{
+    cursor: pointer;
+    box-shadow: 0 0 50px white;
+    border-radius: 20px;
+    transition: 1s;
+}
+.social5:hover,:focus{
+    cursor: pointer;
+    box-shadow: 0 0 50px white;
+    border-radius: 50px;
+    transition: 1s;
+}
 
 
    

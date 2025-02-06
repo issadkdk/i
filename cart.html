@@ -10,10 +10,8 @@
             padding: 10px;
             margin-bottom: 10px;
         }
-        .cart-item img {
-            width: 100px;
-            height: auto;
-        }
+        
+        
         a{
             text-decoration: none;
         }
@@ -32,6 +30,8 @@
         #accounting:hover{
             background-color: gray;
             cursor: pointer;
+            transition: 1s;
+            box-shadow: 0 0 50px rgb(46, 210, 255);
         }
         #totalPrice{
             font-size: 30px;
@@ -41,11 +41,11 @@
             text-align: center;
         }
         div{
-            background-color: gray;
+            background-color: rgb(56, 218, 255);
             border-radius: 5%;
             margin-top: 10px;
             width: 70%;
-            
+            box-shadow: 0 0 20px rgb(56, 218, 255);
             margin-left: 200px;
 
         }
@@ -70,7 +70,7 @@
             let cart = JSON.parse(localStorage.getItem("cart")) || [];
             let cartContainer = document.getElementById("cartItems");
             let totalPriceElement = document.getElementById("totalPrice");
-            let buyNowButton = document.getElementById("accounting"); // Get the button
+            let buyNowButton = document.getElementById("accounting"); 
             let totalCartPrice = 0;
 
             cartContainer.innerHTML = "";
@@ -91,7 +91,7 @@
                         <p><strong>Total:</strong> $${item.total}</p>
                         <button class="remove-item" data-index="${index}">Remove</button>
                         <hr>
-                        <img></img>
+                        
                     `;
 
                     cartContainer.appendChild(cartItemElement);
@@ -100,14 +100,14 @@
                 totalPriceElement.textContent = `Total Cart Price: $${totalCartPrice.toFixed(2)}`;
             }
 
-            // Hide "BUY NOW" button if the total price is 0
+            
             if (totalCartPrice > 0) {
-                buyNowButton.style.display = "block"; // Show button
+                buyNowButton.style.display = "block"; 
             } else {
-                buyNowButton.style.display = "none"; // Hide button
+                buyNowButton.style.display = "none"; 
             }
 
-            // Attach event listeners to remove buttons
+            
             document.querySelectorAll(".remove-item").forEach(button => {
                 button.addEventListener("click", (event) => {
                     let index = event.target.getAttribute("data-index");
@@ -116,19 +116,19 @@
             });
         });
 
-        // Remove item function
+        
         function removeCartItem(index) {
             let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
             if (cart.length > 0) {
-                cart.splice(index, 1); // Remove the item
-                localStorage.setItem("cart", JSON.stringify(cart)); // Save updated cart
+                cart.splice(index, 1); 
+                localStorage.setItem("cart", JSON.stringify(cart)); 
 
-                // Update cart quantity in SVG
+                
                 let newCartCount = cart.reduce((sum, item) => sum + item.quantity, 0);
                 localStorage.setItem("cartCount", newCartCount);
 
-                location.reload(); // Refresh the page to update the cart
+                location.reload(); 
             }
         }
     </script>
