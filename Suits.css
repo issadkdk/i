@@ -370,7 +370,7 @@ select{
 }
 .social1:hover,:focus{
     cursor: pointer;
-    box-shadow: 0 0 50px rgb(250, 255, 100);
+    box-shadow: 0 0 50px  white;
     border-radius: 50px;
     transition: 1s;
 }
